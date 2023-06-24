@@ -1,0 +1,25 @@
+body {
+  font-family: "PT Mono";
+  background-color: lightskyblue;
+}
+.details,
+.main-city,
+.days {
+  border: dotted 1.5px lightblue;
+  background-color: rgba(218, 242, 247, 0.473);
+}
+.days {
+  border-radius: 30px;
+}
+.form-control {
+  border: 1px solid lightblue;
+  background-color: rgba(218, 242, 247, 0.473);
+}
+.part1,
+.part2 {
+  background-color: rgba(187, 218, 224, 0.13);
+  border: 1px solid lightblue;
+}
+.weather-description {
+  text-transform: capitalize;
+}
