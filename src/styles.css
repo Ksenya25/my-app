@@ -11,9 +11,7 @@ body {
 .days {
   border-radius: 30px;
 }
-.input {
-  color: white;
-}
+
 .form-control {
   border: 1px solid lightblue;
   background-color: rgba(218, 242, 247, 0.473);
