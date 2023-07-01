@@ -55,6 +55,12 @@ function displayWeatherCondition(response) {
   document.querySelector("#description").innerHTML =
     response.data.weather[0].main;
   document.querySelector("#pressure").innerHTML = response.data.main.pressure;
+  let iconElement = document.querySelector("#main-icon");
+  iconElement.setAttribute(
+    "src",
+    `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
+  );
+  iconElement.setAttribute("alt", response.data.weather[0].main);
 }
 
 let form = document.querySelector("#search-form");
@@ -73,3 +79,27 @@ let currentButton = document.querySelector("#current-btn");
 currentButton.addEventListener("submit", showCurrentCityWeather);
 
 navigator.geolocation.getCurrentPosition(showCurrentCityWeather);
+
+function fahrenheit1(event) {
+  event.preventDefault();
+  choiceF.classList.add("active");
+  choiceC.classList.remove("active");
+  let tempF = document.querySelector("#temp");
+  tempF.innerHTML = Math.round((temperature * 9) / 5 + 32);
+}
+
+let temperature = null;
+
+function celsius1(event) {
+  event.preventDefault();
+  choiceC.classList.add("active");
+  choiceF.classList.remove("active");
+  let tempC = document.querySelector("#temp");
+  tempC.innerHTML = Math.round(temperature);
+}
+
+let choiceC = document.querySelector("#celsius");
+choiceC.addEventListener("click", celsius1);
+
+let choiceF = document.querySelector("#fahrenheit");
+choiceF.addEventListener("click", fahrenheit1);

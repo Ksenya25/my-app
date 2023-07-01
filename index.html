@@ -33,30 +33,31 @@
   <link rel="stylesheet" href="src/styles.css" />
 </head>
 <body>
+ <div class="container mainbody" style="max-width: 70%">
 
-		
-						<div  class="container text-center" >
-							<div class="row align-items-start"><form class="d-flex search-engine"id="search-form" role="search">
+						  <div class="container-fluid search"  >
+								<form class="d-flex search-engine"id="search-form" >
 								<input type="text" class="form-control me-2" id="search-engine" placeholder="Enter a city..." />
-								<button type="button"  class="btn btn-info"  id ="search-btn">Search city</button>
-								<button type="button"  class="btn btn-info" id ="current-btn">Current city</button>
-							</form>
+								<button type="button"  class="btn btn-light"  id ="search-btn">Search city</button>
+								<button type="button"  class="btn btn-light" id ="current-btn">Current city</button>
+								</form>
 							</div>
-						</div>
+						</br>
 	  
-		
+	
 				<div class="card-body">
-					<div class="container text-center">
+					<div class="container text-center">	
 						<div class="row align-items-start">
 						 <div class="col">
-			 
 
 				<div class="card borders" style="max-width: 100%">
 						<div class="card-body">
 							
+
 							<div class="container text-center">
 								<div class="row align-items-start">
-										<div class="card borders main-city" style="max-width: 30%"> <div class="col"><strong><span id="city-search">Tokyo</span> <span id ="temp">17</span>°C</strong></br> <span id="current-time">Wednesday</span></br>☀</br><span id="description">Clear sky</span></div></div>
+										
+										<div class="card borders main-city" style="max-width: 30%"> <div class="col"><strong><span id="city-search">Tokyo</span> <span id ="temp">17</span> <a href="#" class = "grade active" id="celsius">°C </a><span class = "btwn grades"> | </span><a href="#" class = "grade" id="fahrenheit">°F</a></strong></br> <span id="current-time">Wednesday</span></br><span id="main-icon">☀</span></br><span id="description">Clear sky</span></div></div>
 										<div class="card borders  details" style="max-width: 70%">
 										<div class="col">
 										<span class = "atmosphere"><i class="fa-solid fa-temperature-three-quarters"></i> Feels like: </span>  <span id ="feels-like"> 16</span>°C
@@ -74,26 +75,28 @@
 								</div>
 							</div>
 						</div>
-					</div>
+
+
 					<br />
        
-					<div class="card borders" style="max-width: 100%">
-          <div class="card-body">
-            <div class="container text-center">
-              <div class="row align-items-start">
-									<div class="card borders days" style="max-width: 20%"><div class="col ">  Thu</br>⛅ </br>19°</div></div>
-									<div class="card borders days" style="max-width: 20%"><div class="col ">  Fri</br>☁ </br>19°</div></div>
-									<div class="card borders days" style="max-width: 20%"><div class="col ">  Sut</br>🌧 </br>21°</div></div>
-									<div class="card borders days" style="max-width: 20%"><div class="col">  Sun</br>🌧</br>12°</div></div>								
-									<div class="card borders days" style="max-width: 20%"><div class="col">  Mon</br>⛅ </br>13°</div></div>
-              </div>
+					
+
+						          
+           
+              <div class="row align-items-start" id="forecast ">
+									<div class="col ">  Thu</br>⛅ </br>19°</div>
+									<div class="col ">  Fri</br>☁ </br>19°</div>
+									<div class="col ">  Sut</br>🌧 </br>21°</div>
+									<div class="col">  Sun</br>🌧</br>12°</div>								
+									<div class="col">  Mon</br>⛅ </br>13°</div>
+              
             </div>
-          </div>
-        </div>
-      
-      </div>
+             
+           </div> 
+		</br>
  <p class = "link"><a href=https://github.com/Ksenya25/my-app.git class="gitHub">Open-source code</a><span> by</span> Kseniia Onyshchenko</p>
 	     <script src="src/index.js"></script>
+		 
 </body>
 
 </html>

@@ -1,26 +1,24 @@
 body {
   font-family: "PT Mono";
-  background-color: #edf9fb;
+  background: radial-gradient(
+    circle at 10% 20%,
+    rgb(226, 240, 254) 0%,
+    rgb(255, 247, 228) 90%
+  );
+}
+.search-form {
+  margin: 15px 30px 0 0;
+  padding: 0 0 0 0;
 }
 .details,
-.main-city,
-.days {
-  border: dotted 1.5px lightblue;
-  background-color: rgba(218, 242, 247, 0.473);
-}
-.days {
-  border-radius: 30px;
+.main-city {
+  border: solid 1.5px #d2d2d2;
 }
 
 .form-control {
-  border: 1px solid lightblue;
-  background-color: rgba(218, 242, 247, 0.473);
+  border: 1px solid #d2d2d2;
 }
-.part1,
-.part2 {
-  background-color: rgba(187, 218, 224, 0.13);
-  border: 1px solid lightblue;
-}
+
 .weather-description {
   text-transform: capitalize;
 }
